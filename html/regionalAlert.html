@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+	<title>全景分析</title>
+	<script type="text/javascript" src="../js/lib/jquery.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/select2.css">
+	<link rel="stylesheet" type="text/css" href="../css/regionalAlert.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-title">
+			<a href="./panoramaAnalysis.html">
+				<img src="../images/logo.png">
+				<b>质检大数据平台</b>
+			</a>
+		</div>
+		<div class="logo-tab">
+			<ul class="header-tab">
+				<li><a href="panoramaAnalysis.html">全景分析</a></li>
+				<li class="active"><a href="#">区域预警</a></li>
+				<li><a href="majorProducts.html">重点产品</a></li>
+				<li><a href="qualityPublicOpinionSearch.html">舆情搜索</a></li>
+			</ul>
+			<div class="info">
+				<img src="../images/userIcon.png">
+				<b class="info-name">用户名称</b>
+			</div>
+		</div>
+	</header>
+	<div class="main-content main-content-nop">
+		<!--搜索框-->
+		<div class="search-box">
+			<div class="alert-select">
+				<p calss="select-box">
+					<select id="city-name"></select>
+				</p>
+			</div>
+			<div class="set-list-box">
+				<ul class="set-list-ul">
+					<li class="active">汽车</li>
+					<li>家电</li>
+					<li>食品</li>
+					<li>药品</li>
+				</ul>
+				<a href="./setList.html" class="set-list-btn">设置</a>
+			</div>
+			<div class="search-right">
+				<div class="search-input-box">
+					<input type="text" class="search-input"/>
+					<a class="search-input-btn"></a>
+				</div>
+				<a class="report-btn"><i></i>生成报告</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="alert-top">
+				<div class="tab type-tab">
+					<p class="active">流入</p>
+					<p>流出</p>
+				</div>
+				<div class="tab time-tab">
+					<p class="active">近一周</p>
+					<p>近一月</p>
+				</div>
+			</div>
+			<div class="alert-bottom">
+				<div class="panAnaly-left-bottom">
+					<div class="position">
+						<ul class="panAnaly-left-bottom-ul">
+							<li><p class="panAnaly-left-bottom-ul-num">2468</p><p>累计质量监测事件</p></li>
+							<!-- <li><p class="panAnaly-left-bottom-ul-num">468</p><p>累计预警</p></li> -->
+						</ul>
+					</div>
+					<img src="../images/legend.png" style="position: absolute; left: 26%; bottom: 10px;"/>
+					<div class="chart" id="mapChart">
+						
+					</div>
+				</div>
+			
+				<div class="alert-pos alert-pos-left">
+					<div class="echart-container">
+						<a class="chart-title"><i></i>热词分析</a>
+						<div class="echart-flex" id="echarts1">
+							
+						</div>
+					</div>
+					<div class="echart-container">
+						<a class="chart-title"><i></i>北京市预警产品</a>
+						<div class="echart-flex" id="echarts2">
+							<div class="type-switch">
+								<p class="active">流入企业</p>
+								<p>流出企业</p>
+							</div>
+							<div class="type-table">
+								<ul class="type-list">
+									<li>
+										<span>1</span>
+										<span>九次方大数据集团</span>
+										<span><a href="./detiles.html"><img title="企业信息" src="../images/detiles.png"></a></span>
+										<span><a href="./warningInformation.html"><img title="预警信息" src="../images/alin.png"></a></span>
+									</li>
+									<li>
+										<span>2</span>
+										<span>九次方大数据集团</span>
+										<span><a href="./detiles.html"><img title="企业信息" src="../images/detiles.png"></a></span>
+										<span><a href="./alertInfo.html"><img title="预警信息" src="../images/alin.png"></a></span>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="alert-pos alert-pos-right">
+					<div class="echart-container">
+						<a class="chart-title"><i></i>北京质量事件环比分析图(周)</a>
+						<div class="echart-flex" id="echarts3"></div>
+					</div>
+					<div class="echart-container">
+						<a class="chart-title"><i></i>北京质量事件环比分析图(月)</a>
+						<div class="echart-flex" id="echarts4"></div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/lib/select2.min.js"></script>
+
+<script type="text/javascript" src="../js/select.js"></script>
+
+<script type="text/javascript" src="../js/lib/pagination/pagination.js"></script>
+<script type="text/javascript" src="../js/echart/echarts.js"></script>
+<script type="text/javascript" src="../js/echart/d3.min.js"></script>
+<script type="text/javascript" src="../js/echart/test.js"></script>
+<script type="text/javascript" src="../js/echart/scatterChart.js"></script>
+<script type="text/javascript" src="../js/echart/three.min.js"></script>
+<script type="text/javascript" src="../js/echart/Jusfoun3dMapLib.min.js"></script>
+
+<script type="text/javascript" src="../js/regionalAlert.js"></script>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+	<title>质检大数据平台</title>
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-title">
+			<a href="">
+				<img src="../images/logo.png">
+				<b>质检大数据平台</b>
+			</a>
+		</div>
+		<div class="logo-tab">
+			<ul class="header-tab">
+				<li class="active"><a href="#">全景分析</a></li>
+				<li><a href="regionalAlert.html">区域预警</a></li>
+				<li><a href="majorProducts.html">重点产品</a></li>
+				<li><a href="qualityPublicOpinionSearch.html">舆情搜索</a></li>
+			</ul>
+			<div class="info">
+				<img src="../images/userIcon.png">
+				<b class="info-name">用户名称</b>
+			</div>
+		</div>
+	</header>
+	<div class="main-content main-content-nop">
+		<!--搜索框-->
+		<div class="search-box">
+			<div class="set-list-box">
+				<ul class="set-list-ul">
+					<li class="active">汽车</li>
+					<li>家电</li>
+					<li>食品</li>
+					<li>药品</li>
+				</ul>
+				<a class="set-list-btn" href="setList.html">设置</a>
+			</div>
+			<div class="search-right">
+				<div class="search-input-box">
+					<input type="text" class="search-input"/>
+					<a class="search-input-btn"></a>
+				</div>
+				<a class="report-btn"><i></i>生成报告</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-position">
+				<div class="panAnaly-left">
+					<div class="panAnaly-left-top">
+						<a class="chart-title"><i></i>产品质量事件预警</a>
+						<ul class="time-list">
+							<li class="active">近一周</li>
+							<li>近一月</li>
+						</ul>
+					</div>
+					<div class="panAnaly-left-bottom">
+						<ul class="panAnaly-left-bottom-ul">
+							<li><p class="panAnaly-left-bottom-ul-num" >2468</p><p>累计质量监测事件</p></li>
+							<li><p class="panAnaly-left-bottom-ul-num">468</p><p>累计预警</p></li>
+						</ul>
+						<div class="chart" id="mapChart" ></div>
+					</div>
+					<div class="hot-word">
+						<a class="chart-title"><i></i>热词分析</a>
+						<div class="hotWordChart" id="hotWordChart"></div>
+					</div>
+				</div>
+				<div class="panAnaly-right">
+					<div class="panAnaly-right-box">
+						<div class="panAnaly-right-top">
+							<div class="panAnaly-right-top1">
+								<a class="chart-title"><i></i>重点预警事件</a>
+								<div class="panAnaly-right-top1-btn">
+									<a href="publicOpinionEmergencyTreatment.html">毒奶粉事件</a>
+									<a href="publicOpinionEmergencyTreatment.html">毒轮胎事件</a>
+								</div>
+							</div>
+							<div class="panAnaly-right-top1 panAnaly-right-top2">
+								<a class="chart-title"><i></i>省市质量预警排行</a>
+								<ul class="panAnaly-right-top2-list panAnaly-right-top2-list1">
+									<li>
+										<span class="span1">1</span>
+										<span class="span2">内蒙古</span>
+										<span class="span3">56</span>
+										<span class="span4 warn"><i></i><i></i><i></i><i></i><i></i></span>
+									</li>
+									<li>
+										<span class="span1">2</span>
+										<span class="span2">内蒙古</span>
+										<span class="span3">56</span>
+										<span class="span4 warn"><i></i><i></i><i></i></span>
+									</li>
+									<li>
+										<span class="span1">3</span>
+										<span class="span2">内蒙古</span>
+										<span class="span3">56</span>
+										<span class="span4 warn"><i></i><i></i></span>
+									</li>
+									<li>
+										<span class="span1">4</span>
+										<span class="span2">内蒙古</span>
+										<span class="span3">56</span>
+										<span class="span4 warn"><i></i><i></i></span>
+									</li>
+									<li>
+										<span class="span1">5</span>
+										<span class="span2">内蒙古</span>
+										<span class="span3">56</span>
+										<span class="span4 warn"><i></i></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="panAnaly-right-bottom">
+							<div class="panAnaly-right-top1 panAnaly-right-top2">
+								<a class="chart-title"><i></i>质量监测事件排行</a>
+								<ul class="panAnaly-right-bottom-list">
+									<li class="active">品牌</li>
+									<li>企业</li>
+								</ul>
+								<ul class="panAnaly-right-top2-list">
+									<li>
+										<span class="span1">1</span>
+										<span>内蒙古内蒙古内蒙古内蒙古</span>
+										<span class="span5">56</span>
+									</li>
+									<li>
+										<span class="span1">2</span>
+										<span>内蒙古内蒙古内蒙古内蒙古</span>
+										<span class="span5">56</span>
+									</li>
+									<li>
+										<span class="span1">3</span>
+										<span>内蒙古内蒙古内蒙古内蒙古</span>
+										<span class="span5">56</span>
+									</li>
+									<li>
+										<span class="span1">4</span>
+										<span>内蒙古内蒙古内蒙古内蒙古</span>
+										<span class="span5">56</span>
+									</li>
+									<li>
+										<span class="span1">5</span>
+										<span>内蒙古内蒙古内蒙古内蒙古</span>
+										<span class="span5">56</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!--图表js-->
+<script src="../js/echart/echarts.js"></script>
+<script src="../js/echart/d3.min.js"></script>
+<script src="../js/echart/scatterChart.js"></script>
+<script src="../js/echart/three-rebuild.min.js"></script>
+<script src="../js/echart/qualityCheckingMap.min.js"></script>
+
+<!--页面js-->
+
+<script type="text/javascript" src="../js/panoramaAnalysis.js"></script>
+</html>

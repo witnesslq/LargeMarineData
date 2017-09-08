@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+	<title>质检大数据平台</title>
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/lib/select2.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-title">
+			<a href="./panoramaAnalysis.html">
+				<img src="../images/logo.png">
+				<b>质检大数据平台</b>
+			</a>
+		</div>
+		<div class="logo-tab">
+			<ul class="header-tab">
+				<li class="active"><a href="panoramaAnalysis.html">全景分析</a></li>
+				<li><a href="regionalAlert.html">区域预警</a></li>
+				<li><a href="majorProducts.html">重点产品</a></li>
+				<li><a href="qualityPublicOpinionSearch.html">舆情搜索</a></li>
+			</ul>
+			<div class="info">
+				<img src="../images/userIcon.png">
+				<b class="info-name">用户名称</b>
+			</div>
+		</div>
+	</header>
+	<div class="main-content main-content-nop main-content-full">
+		<div class="content-box">
+			<div class="cum-nav">
+				<span>质量监测事件</span>
+				<ul class="cum-nav-ul">
+					<li>四川省</li>
+					<li>汽车</li>
+					<li>近一月</li>
+				</ul>
+			</div>
+			<div class="content-box1">
+				<div class="chart1" id="chart1"></div>
+			</div>
+		<!-- 	<div class="sort-by-box cf">
+			<div class="sort-by cf">
+				<span class="sort-by-title">排序依据:</span>
+				<select class="s-input s-select">
+					<option>时间升序</option>
+					<option>时间降序</option>
+				</select>
+			</div>
+		</div> -->
+			<div class="content-box1 marginT20">
+				<table class="panAna-details-table">
+					<thead>
+						<th>标题</th>
+						<th>来源</th>
+						<th>日期</th>
+						<th>操作</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="td-textalign-left">质检总局陈钢：强化协作实现农资产品打假突破</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate"><a class="operate-products disable" title="产品"></a><a class="operate-enter" title="企业"></a><a class="operate-area" title="地区"></a></td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">儿童家具成质检重灾区</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate"><a class="operate-products" title="产品"></a><a class="operate-enter disable" title="企业"></a><a class="operate-area" title="地区"></a></td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">儿童家具成质检重灾区</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate"><a class="operate-products disable" title="产品"></a><a class="operate-enter disable" title="企业"></a><a class="operate-area" title="地区"></a></td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">质检总局陈钢：强化协作实现农资产品打假突破</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate"><a class="operate-products" title="产品"></a><a class="operate-enter" title="企业"></a><a class="operate-area  disable" title="地区"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="cf"><div id="page"></div></div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/lib/pagination/jquery.pagination.js"></script>
+<script type="text/javascript" src="../js/lib/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/echart/echarts.js"></script>
+<script type="text/javascript" src="../js/echart/d3.min.js"></script>
+<script type="text/javascript" src="../js/echart/lineChart.js"></script>
+
+<script type="text/javascript" src="../js/qualityMonitoringInformation.js"></script>
+</html>

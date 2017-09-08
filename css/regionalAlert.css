@@ -1,0 +1,324 @@
+.main-content-nop{
+	padding:0;
+}
+.set-list-btn{
+	width:80px;
+	height:32px;
+	text-align: center;
+	line-height: 32px;
+	color:#001a6b;
+	margin-left:20px;
+	background:url(../images/set_bg.png) no-repeat;
+}
+.search-input-btn{
+	width:36px;
+	height:32px;
+	background:url(../images/search_btn.png) no-repeat;
+}
+.report-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:32px;
+	color:#001a6b;
+	line-height:32px;
+	background:url(../images/report_btn.png) no-repeat;
+	background-size: cover;
+}
+.report-btn i{
+	width:14px;
+	height:16px;
+	margin:0 10px;
+	background:url(../images/report_icon.png) no-repeat;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding:20px 17px;
+	height:calc(100% - 108px);
+}
+.panAnaly-left{
+	width:68%;
+	height:100%;
+}
+.panAnaly-left-top{
+	display: flex;
+	height:28px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.time-list{
+	display:flex;
+	height:100%;
+	justify-content: center;
+	align-items: center;
+	border-left:none;
+	background:rgba(0,27,117,0.4);
+}
+.time-list li{
+	display: flex;
+	align-items: center;
+	height:100%;
+	border:1px solid #093795;
+	padding:0 10px;
+	color:#fff;
+	cursor: pointer;
+}
+.time-list li.active{
+	background:rgba(0,27,117,0.8);
+	border:1px solid #0066eb;
+}
+.panAnaly-left-bottom{
+	height:100%;
+	position: relative;
+}
+.position{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.panAnaly-left-bottom-ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.panAnaly-left-bottom-ul li{
+	font-size:16px;
+	color:#fff;
+	line-height:34px;
+	padding:0 30px;
+	text-align:center;
+}
+.panAnaly-left-bottom-ul li p.panAnaly-left-bottom-ul-num{
+	color:#ffc424;
+	font-size:24px;
+}
+/*.panAnaly-left-bottom-ul li:first-child{
+	background:url(../images/line.png) no-repeat right bottom;
+}*/
+.chart{
+	width:100%;
+}
+
+.panAnaly-right{
+	width:30%;
+	height:100%;
+	border:1px solid #005689;
+	background:rgba(7,48,103,0.2);
+}
+.panAnaly-right-box{
+	padding:17px;
+	display: flex;
+	flex-direction: column;
+}
+.panAnaly-right-top{
+	display: flex;
+	flex: 3;
+}
+.panAnaly-right-top1{
+	width:100%;
+}
+.panAnaly-right-top1-btn{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.panAnaly-right-top1-btn a{
+	width:49%;
+	height:37px;
+	color:#fff;
+	background:url(../images/keyWarnEvent_bg.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 37px;
+}
+/*yangjie*/
+.alert-select p{
+	width: 140px;
+}
+
+.alert-top{
+	width: 48%;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;	
+}
+.tab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 27, 117, 0.4);
+}
+.tab p.active{
+	background: rgba(2,21,101,.5);
+}
+.tab p{
+	background: rgba(0, 27, 117, 0.32);
+}
+.alert-top p{
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid rgba(0,102,235,0.32);
+}
+.alert-top p.active{
+	background: rgba(0, 27, 117, 0.8);
+	border: 1px solid rgba(0,102,235,0.8);
+}
+.alert-bottom{
+	position: relative;
+	/*flex: 1;*/
+	height: calc(100% - 28px);
+}
+.alert-pos{
+	width: 23%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+}
+
+.alert-pos-left{
+	left: 0;
+}
+.alert-pos-right{
+	right: 0;
+}
+.echart-container{
+	display: flex;
+	flex-direction: column;
+	height: 48%;
+	border:1px solid rgba(0,86,137,.6);
+	background: rgba(7, 48, 103, 0.2);
+	padding: 10px;
+	box-sizing:border-box;
+}
+.echart-flex{
+	flex: 1;
+}
+.echart-flex svg{
+	height: 100%;
+}
+#echarts2{
+	display: flex;
+	flex-direction: column;
+	box-sizing:border-box;
+	margin-top: 10px;
+}
+.type-switch{
+	height: 36px;
+	display: flex;
+}
+.type-switch p{
+	flex: 1;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+	font-size: 0.15rem;
+	color: #fff;
+	border:1px solid rgba(0,86,137,.6);
+	border-bottom: none;
+
+}
+.type-switch p.active{
+	background: rgba(1,25,100,0.5);
+	border:1px solid #0066eb;
+	border-bottom: none;
+}
+.type-table{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #0066eb;
+}
+.type-list{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.type-list li{
+	height: calc(100%/5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #0066eb;
+}
+.type-list li span:nth-child(1){
+	width: 28px;
+	text-align: center;
+	color: #fff;
+	font-size: 0.2rem;
+	font-weight: bolder;
+}
+.type-list li span:nth-child(2){
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #fff;
+}
+.type-list li span:nth-child(3){
+	width: 15px;
+	margin-right: 10px;
+}
+.type-list li span img{
+	width: 16px;
+	height: 16px;
+}
+.type-list li span:nth-child(4){
+	width: 19px;
+	margin-right: 10px;
+}
+#city-name{
+	width: 140px!important;
+	height: 32px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	background: url(../images/sel.png) no-repeat;
+	width: 32px;
+	height: 30px;
+	background-size: 100% 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border-color: #000 transparent transparent transparent;
+}
+.select2-container .select2-selection--single{
+	height: 32px;
+}
+.select2-selection__rendered{
+	height: 30px;
+	line-height: 30px;
+}
+.select2-container--default .select2-selection--single{
+	background-color: #011d74;
+	color: #fff;
+	border:2px solid #0066eb;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	color: #fff;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border-color: #000 transparent transparent transparent;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border-color: transparent transparent #000 transparent;
+}
+/*地图*/
+.chart{
+	height: 100%;
+}

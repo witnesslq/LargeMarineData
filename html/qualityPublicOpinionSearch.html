@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+	<title>质检大数据平台</title>
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/lib/select2.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-title">
+			<a href="./panoramaAnalysis.html">
+				<img src="../images/logo.png">
+				<b>质检大数据平台</b>
+			</a>
+		</div>
+		<div class="logo-tab">
+			<ul class="header-tab">
+				<li><a href="panoramaAnalysis.html">全景分析</a></li>
+				<li><a href="regionalAlert.html">区域预警</a></li>
+				<li><a href="majorProducts.html">重点产品</a></li>
+				<li class="active"><a href="#">舆情搜索</a></li>
+			</ul>
+			<div class="info">
+				<img src="../images/userIcon.png">
+				<b class="info-name">用户名称</b>
+			</div>
+		</div>
+	</header>
+	<div class="main-content  main-content-full ">
+		<div class="content-box">
+			<div class="cum-nav">
+				<a class="chart-title"><i></i>舆情搜索</a>
+				<a class="report-btn report-btnb"><i></i>生成报告</a>
+			</div>
+			<div class="public-opinion-search">
+				<div class="public-opinion-search1 public-opinion-searchtop">
+					<span class="label-span">省份：</span>
+					<div class="province-list">
+						<ul class="province-list-ul">
+							<li class="active">全部</li>
+							<li>北京</li>
+							<li>天津</li>
+							<li>上海</li>
+							<li>重庆</li>
+							<li>河北</li>
+							<li>山西</li>
+							<li>辽宁</li>
+							<li>吉林</li>
+							<li>黑龙江</li>
+							<li>江苏</li>
+							<li>浙江</li>
+							<li>安徽</li>
+							<li>福建</li>
+							<li>江西</li>
+							<li>山东</li>
+							<li>河南</li>
+							<li>湖北</li>
+							<li>湖南</li>
+							<li>广东</li>
+							<li>海南</li>
+							<li>四川</li>
+							<li>贵州</li>
+							<li>云南</li>
+							<li>陕西</li>
+							<li>甘肃</li>
+							<li>青海</li>
+							<li>内蒙</li>
+							<li>广西</li>
+							<li>西藏</li>
+							<li>宁夏</li>
+							<li>新疆</li>
+						</ul>
+						
+					</div>
+					<i class="up-down" data-show="false"></i>
+				</div>
+				<!-- <div class="public-opinion-search1 cf" id="hiddenList">
+					<span class="label-span"></span>
+					<div class="province-list">
+						<ul class="province-list-ul province-list-ul-none">
+							<li>浙江</li>
+							<li>安徽</li>
+							<li>福建</li>
+							<li>江西</li>
+							<li>山东</li>
+							<li>河南</li>
+							<li>湖北</li>
+							<li>湖南</li>
+							<li>广东</li>
+							<li>海南</li>
+							<li>四川</li>
+							<li>贵州</li>
+							<li>云南</li>
+							<li>陕西</li>
+							<li>甘肃</li>
+							<li>青海</li>
+							<li>内蒙</li>
+							<li>广西</li>
+							<li>西藏</li>
+							<li>宁夏</li>
+							<li>新疆</li>
+						</ul>
+					</div>
+					<i class="up-down up-down-none"></i>
+				</div> -->
+				<div class="public-opinion-search1">
+					<span class="label-span">时间：</span>
+					<div class="province-list">
+						<ul class="province-list-ul province-list-ul-none">
+							<li class="active">近一周</li>
+							<li>近一月</li>
+						</ul>
+					</div>
+					<i class="up-down up-down-none"></i>
+				</div>
+				<div class="public-opinion-search1">
+					<span class="label-span label-span-nomargin">关键词：</span>
+					<div class="province-list">
+						<input type="text" class="province-list-input" />
+						<a class="set-list-btn province-list-search-btn">确定</a>
+					</div>
+					<i class="up-down up-down-none"></i>
+				</div>
+			</div>
+			<div class="chart-up-down"><a class="report-btn chart-up-down-btn"><i></i>收起图表</a></div>
+			<div class="content-box1 chart1Box">
+				<div class="chart1" id="chart1"></div>
+			</div>
+			<!-- <div class="sort-by-box cf">
+				<div class="sort-by cf">
+					<span class="sort-by-title">排序依据:</span>
+					<select class="s-input s-select">
+						<option>时间升序</option>
+						<option>时间降序</option>
+					</select>
+				</div>
+			</div> -->
+			<div class="content-box1 marginT20">
+				<table class="panAna-details-table">
+					<thead>
+						<th>标题</th>
+						<th>来源</th>
+						<th>日期</th>
+						<th>操作</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="td-textalign-left">质检总局陈钢：强化协作实现农资产品打假突破</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate">北京</td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">儿童家具成质检重灾区</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate">北京</td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">北京</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate">北京</td>
+						</tr>
+						<tr>
+							<td class="td-textalign-left">质检总局陈钢：强化协作实现农资产品打假突破</td>
+							<td>新华网</td>
+							<td>2016-3-4</td>
+							<td class="operate"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="cf"><div id="page"></div></div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/lib/pagination/jquery.pagination.js"></script>
+<script type="text/javascript" src="../js/lib/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/echart/echarts.js"></script>
+<script type="text/javascript" src="../js/echart/d3.min.js"></script>
+<script type="text/javascript" src="../js/echart/lineChart.js"></script>
+
+<script type="text/javascript" src="../js/qualityPublicOpinionSearch.js"></script>
+</html>

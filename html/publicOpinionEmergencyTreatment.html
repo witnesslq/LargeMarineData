@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+	<title>质检大数据平台</title>
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/lib/layer/skin/layer.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-title">
+			<a href="./panoramaAnalysis.html">
+				<img src="../images/logo.png">
+				<b>质检大数据平台</b>
+			</a>
+		</div>
+		<div class="logo-tab">
+			<ul class="header-tab">
+				<li class="active"><a href="#">全景分析</a></li>
+				<li><a href="regionalAlert.html">区域预警</a></li>
+				<li><a href="majorProducts.html">重点产品</a></li>
+				<li><a href="qualityPublicOpinionSearch.html">舆情搜索</a></li>
+			</ul>
+			<div class="info">
+				<img src="../images/userIcon.png">
+				<b class="info-name">用户名称</b>
+			</div>
+		</div>
+	</header>
+	<div class="main-content main-content-nop">
+		<div class="content-box content-box1">
+			<div class="public-opinion-title-box">
+				<h1 class="public-opinion-title">毒奶粉事件应急处理</h1>
+				<a class="public-opinion-title-time">爆发时间：<i>2008年7月2号</i></a>
+			</div>
+			<div class="public-opinion-box">
+				<a class="chart-title"><i></i>概况</a>
+				<textarea class="opinion-textarea" id="textareaBox"></textarea>
+				<div class="public-opinion-btn">
+					<a class="public-opinion-btn-edit" id="editBtn">编辑</a>
+					<a class="public-opinion-btn-submitted" id="submitttedBtn">报送领导</a>
+				</div>
+			</div>
+			<div class="public-opinion-history">
+				<a class="chart-title"><i></i>历史记录</a>
+				<table class="public-opinion-history-table">
+					<thead>
+						<th style="width:49.9%">标题</th>
+						<th>日期</th>
+					</thead>
+				</table>
+				<div id="tableScroll">
+					<table class="public-opinion-history-table public-opinion-history-table1">
+						<tbody class="public-opinion-history-table-tbody">
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr><tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+							<tr>
+								<td>毒奶粉事件</td>
+								<td>2017-03-12</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="editContent" class="edit-content">
+		<a class="edit-content-title">修改内容</a>
+		<textarea class="edit-textarea"></textarea>
+		<a class="edit-submit">保存</a>
+	</div>
+	<div id="submittedContent" class="edit-content">
+		<a class="edit-content-title">报送领导</a>
+		<div class="submitted-content-list">
+			<div class="submitted-content-list1">
+				<span>手机:</span>
+				<input type="text" class="submitted-content-list-input  tel" />
+			</div>
+			<div class="submitted-content-list1">
+				<span>邮箱:</span>
+				<input type="text" class="submitted-content-list-input  email" />
+			</div>
+			<div class="submitted-content-list1">
+				<span>附加内容:</span>
+				<textarea type="text" class="submitted-content-list-input  extras" ></textarea>
+			</div>
+		</div>
+		<a class="edit-submit">保存</a>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/lib/pagination/jquery.pagination.js"></script>
+<script type="text/javascript" src="../js/lib/nicescroll.js"></script>
+<script type="text/javascript" src="../js/lib/layer/layer.js"></script>
+
+<script type="text/javascript" src="../js/publicOpinionEmergencyTreatment.js"></script>
+</html>
