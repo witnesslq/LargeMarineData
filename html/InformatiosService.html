@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/STecommerce.css">
+    <link rel="stylesheet" type="text/css" href="../css/InformatiosService.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GAksItkSpA2HzIVHA0xAbLGVhdHXbKf9"></script>
+    <title>海洋大数据</title>
+</head>
+
+<body data-header="3" data-left="2">
+	<header>
+    <div class="header">
+        <h1 class="logo">
+			<a href="index.html" class='animated'>
+			    
+			</a>
+		</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+        <ul class="cf">
+            <li><a href="index.html">公共服务</a></li>
+            <li><a href="ocHjHdhs.html">海洋大数据</a></li>
+            <li><a href="marineProducts.html">海产品大数据</a></li>
+            <li><a href="STecommerce.html">海运通</a></li>
+            <li><a href="marineTravel.html">海洋旅游</a></li>
+        </ul>
+        <div class="bg"></div>
+    </div>
+</nav>
+
+    <div id="mainWrap" class="mainWrap">
+        <div class="contentWrap contentWrap1">
+            <p class="topul"><span>海运通>></span><span>海运信息服务>></span><span id="topul_info">航线推荐</span></p>
+         	<div id="leftBar" class="leftBar">
+    <ul>
+        <li>
+            <a href="STecommerce.html" class=' first a2 firstyj' >
+                <span class="icon icon11"></span>
+                <span class="txt">海运电子商务</span>
+            </a>
+        </li>
+        <li>
+ 			<a href="EGovernment.html" class='  a2 lastyj'>
+                <span class="icon icon22"></span>
+                <span class="txt">海运电子政务</span>
+            </a>
+        </li>
+        <li>
+            <a href="InformatiosService.html" class=' last a2 lastyj1'>
+                <span class="icon icon33"></span>
+                <span class="txt">海运信息服务</span>
+            </a>
+            <!--<p class="leftBarOceanMore ISdetile">
+                <a href="Javascript:void(0)">港口管理</a>
+                <a href="Javascript:void(0)">智能找船</a>
+                <a href="Javascript:void(0)">航线推荐</a>
+            </p>-->
+            <div class="ISdetile">
+                <p>港口管理</p>
+                <p>智能找船</p>
+                <p class="active">航线推荐</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+            <div class="mainBody" >
+            	<div class="mainBodyWrap">
+                    <div class="leftBar_tab">
+                        <div class="main main4 search_ship">
+                            <div id="search_ship_echarts1">
+                                    <iframe id="u10486_input" src="http://192.168.16.220/test/jining/scene/index-raw.php" frameborder="0" scrolling="no" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" style="width: 100%;height: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftBar_tab">
+                        <div class="search_ship_title">
+                                <label for="">货物类型&nbsp;:&nbsp;</label>
+                                <select class="area-select fl" id="good-type"></select>
+                                <label for="">载重量&nbsp;:&nbsp;</label>
+                                <input type="text">
+                                <label for="">始发港&nbsp;:&nbsp;</label>
+                                <input type="text">
+                                <label for="">目的港&nbsp;:&nbsp;</label>
+                                <input type="text">
+                                <label for="" class="tagl">标签&nbsp;:&nbsp;</label>
+                                <input type="text"  class="tag">
+                                <span class="match_ship">匹配</span><br>
+                                
+                                <p>
+                                    <label for="">时间要求&nbsp;:&nbsp;</label>
+                                    <input type="text" id="timeStart1">_&nbsp;&nbsp;
+                                    <input type="text" id="timeEnd1">
+                                </p>
+                                
+                            </div>
+                        <div class="main main4 search_ship">
+                            
+                            <div class="search_ship_container">
+                                <div id="search_ship_echarts2">
+                                    
+                                </div>
+                                <div class="search_ship_info">
+                                    <h3 class="ship_title">船舶匹配</h3>
+                                    <div class="ship_echartsbox">
+                                        <div id="ship_echarts1" class="ship_echartsboxs"></div>
+                                        <p id="p1"></p>
+                                    </div>
+                                    <div class="ship_echartsbox">
+                                        <div id="ship_echarts2" class="ship_echartsboxs">
+                                           
+                                        </div>
+                                        <p id="p2"></p> 
+                                    </div>
+                                    <div class="ship_echartsbox">
+                                        <div id="ship_echarts3" class="ship_echartsboxs">
+                                            
+                                        </div>
+                                        <p id="p3"></p>
+                                    </div>
+                                </div>
+                                <div class="search_ship_detiles">
+                                    <span id="close">X</span>
+                                    <p class="ship_base_info">船舶基本信息<span>维度&nbsp;:&nbsp;123.345</span><span>经度&nbsp;:&nbsp;123.345</span></p>
+                                    <div class="imgbox">
+                                        <div class="img">
+                                            <!-- <img src="../images/yj/shipinfo.jpg"> -->
+                                        </div>
+                                        <table>
+                                            <tr>
+                                                <td>船舶登记号&nbsp;:&nbsp;AS0001</td>
+                                                <td>中文船名&nbsp;:&nbsp;祁门</td>
+                                                <td>英文船名&nbsp;:&nbsp;QIMEN</td>
+                                            </tr>
+                                            <tr>
+                                                <td>船舶呼号&nbsp;:&nbsp;BIBQ2</td>
+                                                <td>IMO编号&nbsp;:&nbsp;9532044</td>
+                                                <td>船舶种类&nbsp;:&nbsp;货船</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MMSI&nbsp;:&nbsp;235064475</td>
+                                                <td>船旗国&nbsp;:&nbsp;中国</td>
+                                                <td>船籍港&nbsp;:&nbsp;上海</td>
+                                            </tr>
+                                            <tr>
+                                                <td>船速&nbsp;:&nbsp;15kt/s</td>
+                                                <td>造船厂&nbsp;:&nbsp;山东</td>
+                                                <td>造船地点&nbsp;:&nbsp;山东</td>
+                                            </tr>
+                                            <tr>
+                                                <td>造船时间&nbsp;:&nbsp;2015-10-10</td>
+                                                <td>安放龙骨日期&nbsp;:&nbsp;2015-10-12</td>
+                                                <td>下水日期&nbsp;:&nbsp;2015-11-10</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    <p class="ship_base_info">船舶基本信息</p>
+                                    <table class="tons_table">
+                                            <tr>
+                                                <td>船舱数&nbsp;:&nbsp;10个</td>
+                                                <td>甲板数&nbsp;:&nbsp;</td>
+                                                <td>总长&nbsp;:&nbsp;120m</td>
+                                                <td>型宽&nbsp;:&nbsp;10m</td>
+                                            </tr>
+                                            <tr>
+                                                <td>型深&nbsp;:&nbsp;112m</td>
+                                                <td>吃水&nbsp;:&nbsp;6m</td>
+                                                <td>排水量&nbsp;:&nbsp;</td>
+                                                <td>冷藏数量&nbsp;:&nbsp;10m</td>
+                                            </tr>
+                                            <tr>
+                                                <td>冷藏总容积&nbsp;:&nbsp;</td>
+                                                <td>船舱数&nbsp;:&nbsp;</td>
+                                                <td>货舱总容积&nbsp;:&nbsp;</td>
+                                            </tr>
+                                    </table>
+                                    <p class="ship_base_info">主机吨位</p>
+                                    <table class="tons_table">
+                                            <tr>
+                                                <td>主机制造商&nbsp;:&nbsp;</td>
+                                                <td>主机种类&nbsp;:&nbsp;</td>
+                                                <td>主机燃料&nbsp;:&nbsp;</td>
+                                                <td>主机性能&nbsp;:&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>主机型号&nbsp;:&nbsp;</td>
+                                                <td>主机速率&nbsp;:&nbsp;</td>
+                                                <td>主机建造地点&nbsp;:&nbsp;</td>
+                                                <td>主机建造时间&nbsp;:&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>主机总功率&nbsp;:&nbsp;</td>
+                                                <td>总吨位&nbsp;:&nbsp;</td>
+                                                <td>载重量&nbsp;:&nbsp;7T</td>
+                                                <td>净吨位&nbsp;:&nbsp;8T</td>
+                                            </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftBar_tab active">
+                        <div class="main main4 search_ship">
+                            <div class="search_ship_container">
+                                <div class="pos weather">
+                                    <ul>
+                                        <li class="active">天气预报</li>
+                                        <li>推荐航线</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="pos weather_box  posnone">
+                                            <div class="weather_container">
+                                                <h3>海浪图</h3>
+                                                <div id="weather_echarts1" class="weather_echarts">
+                                                    <img src="../images/yj/1.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="weather_container">
+                                                <h3>气压图</h3>
+                                                <div id="weather_echarts2" class="weather_echarts">
+                                                    <img src="../images/yj/2.jpg">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="pos airLine_detiles posnone">
+                                            <table>
+                                                <tr>
+                                                    <th>项目</th>
+                                                    <th>实际航线</th>
+                                                    <th>推荐航线2</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>预计到达时间</td>
+                                                    <td>2020-12-2/1100GMT</td>
+                                                    <td>2020-12-2/2123GMT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>平均航速</td>
+                                                    <td>19.5KTS</td>
+                                                    <td>19.7KTS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>预计燃油消耗</td>
+                                                    <td>_</td>
+                                                    <td>1547.3MT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>结果</td>
+                                                    <td>遭遇10米高巨浪区</td>
+                                                    <td>全程浪高不超过5米</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                </div>
+                                <div id="search_ship_echarts">
+                                    <img src="../images/yj/3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            
+            			
+            			
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src='../js/lib.js'></script>
+<script type="text/javascript" src='../js/common.js'></script>
+<script type="text/javascript" src='../js/index.js'></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GAksItkSpA2HzIVHA0xAbLGVhdHXbKf9"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js"></script>
+<script type="text/javascript" src='../js/infornationService.js'></script>
+<script type="text/javascript" src='../js/infornationService2.js'></script>
+</html>

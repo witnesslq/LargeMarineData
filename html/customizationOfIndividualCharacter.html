@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/STecommerce.css">
+    <link rel="stylesheet" type="text/css" href="../css/publicServicePlatform.css">
+    <link rel="stylesheet" type="text/css" href="../css/hotExperts.css">
+    <title>海洋大数据</title>
+</head>
+
+<body data-header="0" data-left="4">
+    <header>
+    <div class="header">
+        <h1 class="logo">
+			<a href="index.html" class='animated'>
+			    
+			</a>
+		</h1>
+    </div>
+</header>
+<nav>
+    <div class="nav">
+        <ul class="cf">
+            <li><a href="index.html">公共服务</a></li>
+            <li><a href="ocHjHdhs.html">海洋大数据</a></li>
+            <li><a href="marineProducts.html">海产品大数据</a></li>
+            <li><a href="STecommerce.html">海运通</a></li>
+            <li><a href="marineTravel.html">海洋旅游</a></li>
+        </ul>
+        <div class="bg"></div>
+    </div>
+</nav>
+
+    <div id="mainWrap" class="mainWrap">
+        <div class="contentWrap contentWrap1">
+        <p class="topul"><span>海洋旅游>></span><span>旅游公共服务>></span><span>个性定制</span></p>
+            <div id="leftBar" class="leftBar">
+    <ul>
+        <li>
+            <a href="publicServicePlatform.html" class=' first a2' >
+                <span class="icon icon1"></span>
+                <span class="txt">活动专区</span>
+            </a>
+        </li>
+        <li>
+ 			<a href="hotData.html" class=' a2'>
+                <span class="icon icon2"></span>
+                <span class="txt">热门数据</span>
+            </a>
+        </li>
+        <li>
+ 			<a href="hotTechnology.html" class=' a2'>
+                <span class="icon icon3"></span>
+                <span class="txt">热门技术</span>
+            </a>
+        </li>
+        <li>
+ 			<a href="hotExperts.html" class=' a2'>
+                <span class="icon icon4"></span>
+                <span class="txt">热门专家</span>
+            </a>
+        </li>
+        <li>
+ 			<a href="customizationOfIndividualCharacter.html" class=' last a2'>
+                <span class="icon icon5"></span>
+                <span class="txt">个性定制</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="mainBody" >
+                <div class="mainBodyWrap">
+                    <div class="main main2">
+                        <div class="main_text main1_text main_text_character">
+                            <div class="main1_text_select cf fl main1_proferce main1_ht">
+                                <div class="proferce_sel character_sel fl"> 
+                                   <label>定制名称&nbsp;:&nbsp; </label>
+                                    <select class="area-select fl" id="customize_name"></select> 
+                                </div>
+                                <div class="proferce_sel character_sel fl"> 
+                                    <label>定制类型&nbsp;:&nbsp; </label>
+                                    <select class="area-select fl" id="customize_type"></select>
+                                </div>
+                                <div class="timeBox fl">
+                                        <span class="timeTit">预算费用</span>
+                                        <input type="text" id="timeStart" /> -
+                                        <input type="text" id="timeEnd" />
+                                </div>
+                            </div>
+                            <div class="cf sortType">
+                                <div class="hot-data-con1-paixu cf fl">
+                                        <span class="hot-data-con1-paixu-l fl">发布期限：</span>
+                                        <form class="hot-data-con1-paixu-r fl" >
+                                            <label><input class="hot-data-radio active" type="radio">全部</label>
+                                            <label><input class="hot-data-radio" type="radio">三日内</label>
+                                            <label><input class="hot-data-radio" type="radio">七日内</label>
+                                            <label><input class="hot-data-radio" type="radio">30日内</label>
+                                            <label><input class="hot-data-radio" type="radio">自定义</label>
+                                        </form>
+                                    </div>
+                                
+                                <div class="timeBox fl timeBox_pl">
+                                        
+                                        <input type="text" id="timeStart1" /> 至
+                                        <input type="text" id="timeEnd1" />
+                                </div>
+                            </div>
+                            <div class="cf sortType">
+                                <div class="hot-data-con1-paixu cf fl">
+                                        <span class="hot-data-con1-paixu-l fl">当前状态：</span>
+                                        <form class="hot-data-con1-paixu-r fl" >
+                                            <label><input class="hot-data-radio active" type="radio">全部</label>
+                                            <label><input class="hot-data-radio" type="radio">进行中</label>
+                                            <label><input class="hot-data-radio" type="radio">已完成</label>
+                                            <label><input class="hot-data-radio" type="radio">已关闭</label>
+                                            <label><input class="hot-data-radio" type="radio">已过期</label>
+                                        </form>
+                                    </div>
+                            </div>
+                            <div class="quire cf">
+                                <span id="quire">查询</span>
+                            </div>
+                            
+                        </div>
+                        <div class="main_text main_character">
+                            <table class="table_character">
+                                <tr>
+                                    <th>序号</th>
+                                    <th>名称</th>
+                                    <th>类型</th>
+                                    <th>发布时间</th>
+                                    <th>当前状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main_text main2_text main2_character">
+                            <dl class="error">
+                                <dt>
+                                    <img src="../images/yj/error.png">
+                                </dt>
+                                <dd>
+                                    还没有数据显示！
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                        
+                        
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src='../js/lib.js'></script>
+<script type="text/javascript" src='../js/common.js'></script>
+<script type="text/javascript" src='../js/hotExperts.js'></script>
+</html>
